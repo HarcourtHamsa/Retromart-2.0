@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Welcome to RETROMART NFT Marketplace
+                  Welcome to Retromart NFT Marketplace
                 </span>
                 <br />
                 {/* faster than ever. */}
@@ -51,10 +51,9 @@ const Home: NextPage = () => {
                   href="https://thirdweb.com"
                   target="_blank"
                 >
-                  thirdweb
+                  Discover
                 </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                Collect and  <b>Sell </b>NFTs.Unearth the most outstanding NFTs in every aspect of life. Create your NFTs and sell them.
               </p>
 
               <div className={styles.heroCtaContainer}>

@@ -332,6 +332,21 @@
     max-height: 270px;
   }
 }
+.navMiddle {
+  display: flex;
+  margin-left: 7px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+}
+.button{
+
+  color: rgb(73, 73, 230);
+  padding: 10px 15px;
+}
+
 
 /* Above 640 and less than 960 */
 @media (min-width: 640px) and (max-width: 960px) {

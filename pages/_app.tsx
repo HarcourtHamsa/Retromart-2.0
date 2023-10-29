@@ -5,7 +5,7 @@ import Gallery  from "../pages/gallery";
 import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
 import "../styles/globals.css";
-
+import Footer from '../components/Footer/Footer'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
@@ -25,7 +25,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       {/* Render the actual component (page) */}
       <Component {...pageProps} />
+      
       <Gallery/>
+      
     </ThirdwebProvider>
   );
 }

@@ -25,15 +25,16 @@ export function Navbar() {
           </Link>
 
           <div className={styles.navMiddle}>
-          <Link href="/buy" className={styles.link}>
-              Mint(Coming soon)
-            </Link>
             <Link href="/buy" className={styles.link}>
               Buy
             </Link>
             <Link href="/sell" className={styles.link}>
               Sell
             </Link>
+            <Link href="/buy" className={styles.link}>
+              Mint
+            </Link>
+          
           </div>
         </div>
 

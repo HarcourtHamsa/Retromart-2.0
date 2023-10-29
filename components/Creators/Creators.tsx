@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
 import Skeleton from "../Skeleton/Skeleton";
-import NFT from "./NFT";
+import NFT from "../NFT/NFT";
 import styles from "../../styles/Buy.module.css";
 import { useState, useEffect } from "react";
-import Footer from '../Footer/Footer'
+
 type Props = {
   isLoading: boolean;
   data: NFTType[] | undefined;
@@ -15,7 +15,7 @@ type Props = {
   filteredIDs?: string[]; // Add a prop to pass the IDs you want to filter
 };
 
-export default function NFTGrid2({
+export default function Creators({
   isLoading,
   data,
   overrideOnclickBehavior,
@@ -42,7 +42,7 @@ export default function NFTGrid2({
         ))
       ) : filteredData.length > 0 ? (
         filteredData.slice(0, 10).map((nft, index) => {
-          if (index >= 10) return null; // Exit the loop after 10 items
+          if (index >= 5) return null; // Exit the loop after 10 items
           return !overrideOnclickBehavior ? (
             <Link
               href={`/token/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`}
@@ -64,7 +64,6 @@ export default function NFTGrid2({
       ) : (
         <p>{emptyText}</p>
       )}
-          </div>
-    
+    </div>
   );
 }

@@ -1,0 +1,39 @@
+secret key=5v7cW0Lai6ujJv28rL2HiP0pX2avyD9zUZOcR1JcaHg_3WU0YEK7uaoa7ZiWx-fneh-LTDeUArvqsBdXPr4tZQ
+client id=bc700c5b2405d62d4526641f7517d028
+
+
+createDirectListing({
+    assetContractAddress: "{{asset_contract_address}}",
+    tokenId: "{{token_id}}",
+    pricePerToken: "{{price_per_token}}",
+    currencyContractAddress: "{{currency_contract_address}}",
+    isReservedListing: false,
+    quantity: "{{quantity}}",
+    startTimestamp: new Date(),
+    endTimestamp: new Date(
+      new Date().getTime() + 7 * 24 * 60 * 60 * 1000,
+    ),
+    })
+
+
+    <Web3Button
+                contractAddress={"0x6551d937af8e7DAC5aB8b4DD9B5Bd02A3C46c9EF"}
+                action={() =>
+                  createDirectListing({
+                    assetContractAddress: "0xf307BD282FcDa3170E6B39F37cA8D6AE13a1E923",
+                    tokenId: 5,
+                    pricePerToken: 0.01,
+                    currencyContractAddress: "0x0000000000000000000000000000000000001010",
+                    isReservedListing: false,
+                    quantity: 1,
+                    startTimestamp: new Date(),
+                    endTimestamp: new Date(
+                      new Date().getTime() + 7 * 24 * 60 * 60 * 1000,
+                    ),
+                    buyoutPricePerToken : 0.01,
+                    duration: 6000,
+                  })
+                }
+              >
+                Create Direct Listing
+              </Web3Button>

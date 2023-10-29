@@ -24,6 +24,8 @@ const [randomColor1, randomColor2, randomColor3, randomColor4] = [
   randomColor(),
 ];
 
+// collection_add=0xc5F852bDd50605C2A77B56Eb17005Be14A552811
+
 export default function ProfilePage() {
   const router = useRouter();
   const [tab, setTab] = useState<"nfts" | "listings" | "auctions">("nfts");
